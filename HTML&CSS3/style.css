@@ -102,5 +102,26 @@ header img {
 .grid-layout-50 {
     height: 500px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-items: stretch; /* start - center - end - stretch */
+    align-items: stretch; /* start - center - end - stretch */
+}
+.title {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+.header {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+.sidebar {
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+.content {
+
+}
+.footer {
+
 }
