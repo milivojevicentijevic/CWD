@@ -102,9 +102,5 @@ header img {
 .grid-layout-50 {
     height: 500px;
     display: grid;
-    grid-template-columns: 40% 30% 30%;
-    /* grid-column-gap: 1em;
-    grid-row-gap: 1em; */
-    grid-gap: 1em;
-
+    grid-template-columns: 1fr 1fr;
 }
