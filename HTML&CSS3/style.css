@@ -31,6 +31,10 @@ h3 {
     font-size: 20px;
     text-transform: uppercase;
 }
+h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
 hr {
     width: 30px;
 }
@@ -137,9 +141,6 @@ header img {
     color: #676676;
     font-size: 16px;
 }
-#test {
-    height: 1000px;
-}
 
 /* Adding a video */
 #content-video {
@@ -155,3 +156,61 @@ iframe {
     cursor: pointer;
 }
 
+/* Footer */
+#grid-footer {
+    width: 100%;
+    box-shadow: 0px 0px 10px #000;
+    margin: 80px 0 0 0;
+}
+.content-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.4fr;
+    grid-gap: 3em;
+    padding: 80px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.content-footer img {
+    width: 40px;
+}
+.content-footer a {
+    text-decoration: none;
+    color: #000;
+}
+.content-footer a:hover {
+    transition: .25s ease-in;
+    color: #676676;
+}
+.content-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.content-footer ul li{
+    padding: 0px 0px 8px 0px;
+}
+.input-newsletter {
+    width: 140px;
+    height: 30px;
+    display: inline-block;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.submit-newsletter {
+    width: 100px;
+    height: 35px;
+    margin: 0px 0px 0px 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    box-shadow: 0px 0px 10px #000;
+}
+.social-footer li {
+    display: inline;
+}
+.social-footer .fab {
+    font-size: 28px;
+    padding: 20px 10px 0px 0px;
+}
