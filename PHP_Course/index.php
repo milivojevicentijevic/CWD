@@ -6,10 +6,10 @@
 </head>
 <body>
 <?php 
-   $cars = array('Audi' => 50.500, 'BMW' => 40.700, 'Mercedes' => 60.300);
-   foreach ($cars as $key => $value) {
-       echo "My ".$key." has ".$value." mileage<br>";
-   }
+    $cars = array('Expensive' => array('Audi','Mercedes','BMW'),
+                'Inexpensive' => array('Volvo','Ford','Toyota')
+        );
+    echo $cars['Inexpensive'][2];
 ?>
 </body>
 </html>
