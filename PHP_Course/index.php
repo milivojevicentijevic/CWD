@@ -6,19 +6,10 @@
 </head>
 <body>
 <?php 
-// VARIABLES
-$name = "Milivoje";
-echo $name."<br>";
-//Integer
-$age = 35;
-echo "My age is ".$age."<br>";
-$price = 10.5;
-echo "The price is $price";
-$confirmed = true;
-echo "<br>".$confirmed;
-$x = null;
-echo "<br>".$x;
-
+   $cars = array('Audi' => 50.500, 'BMW' => 40.700, 'Mercedes' => 60.300);
+   foreach ($cars as $key => $value) {
+       echo "My ".$key." has ".$value." mileage<br>";
+   }
 ?>
 </body>
 </html>
