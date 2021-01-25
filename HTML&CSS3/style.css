@@ -336,3 +336,77 @@ iframe {
     -ms-filter:blur(0px);
     -moz-filter:blur(0px);
 }
+
+/* Contact form */
+.wrapper-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+    width: 80%;
+    margin: 0 auto;
+}
+.wrapper-contact h2 {
+    font-size: 26px;
+}
+.wrapper-contact ul {
+    padding: 0;
+}
+.wrapper-contact ul li {
+    list-style: none;
+    margin: 0 0 24px 0px;
+}
+.wrapper-contact ul li a {
+    text-decoration: none;
+    color: #676676;
+}
+.wrapper-contact ul li a:hover {
+    transition: .25s ease-in;
+    color: #000;
+}
+.wrapper-contact .fab, .fas {
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    padding: 14px;
+    font-size: 24px;
+}
+label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 0px 0px 8px 0px;
+}
+input {
+    display: block;
+    height: 34px;
+    margin: 0;
+    padding: 0px 8px;
+    font-size: 12px;
+}
+input, textarea {
+    width: 400px;
+    border: 1px solid #bdbdbd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.full-fields {
+    padding: 0px 0px 18px 0px;
+}
+textarea {
+    height: 140px;
+    padding: 8px;
+}
+.submit-btn {
+    width: 120px;
+    height: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    font-size: 20px;
+    margin: 20px 8px 8px 0px;
+}
+.submit-btn:hover {
+    transition: .25s ease-in;
+    color: #000;
+    background-color: #fff;
+}

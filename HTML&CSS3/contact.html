@@ -15,8 +15,8 @@
         <ul>
             <li><a href="index.html" >Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html" class="active">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -25,34 +25,38 @@
     <h1>I'm a dedicated web developer</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repellendus, illo delectus a vero corrupti sapiente quia maxime minima. Sint?</p>
 </div>
-<div class="portfolio-items">
-    <div class="hvrbox">
-        <a href="">
-            <img src="https://cdn.pixabay.com/photo/2020/02/05/15/19/meerkat-4821484_960_720.jpg" alt="">
-            <div class="hvrbox-layer">
-                <div class="hvrbox-position">
-                    <h3>Web Development</h3>
-                    <h4>Vicentijevic Web Agency</h4>
-                </div>
+<div class="wrapper-contact">
+    <div>
+        <h2>Different ways to get in touch</h2>
+        <ul>
+            <li><a href="tel:+381656334593"><i class="fas fa-phone"></i>+381 65 6334593</a></li>
+            <li><a href="mailto:mvicentijevic85@gmail.com"><i class="fas fa-envelope"></i>mvicentijevic85@gmail.com</a></li>
+            <li><a href=""><i class="fab fa-instagram-square"></i>Instagram</a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Get in touch</h2>
+        <form action="">
+            <div class="full-fields">
+                <label for="name">Your Name *</label>
+                <input type="text" name="name" placeholder="Your name" required>
             </div>
-        </a>
+            <div class="full-fields">
+                <label for="phone">Phone number *</label>
+                <input type="phone" name="phone" placeholder="Phone number" required>
+            </div>
+            <div class="full-fields">
+                <label for="email">E-mail address *</label>
+                <input type="email" name="email" placeholder="E-mail address" required>
+            </div>
+            <div class="textarea">
+                <label for="message">Message *</label>
+                <textarea placeholder="Please enter your comments..." name="message"></textarea>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
     </div>
-    <div class="hvrbox-zoom">
-        <a href="">
-            <img src="https://cdn.pixabay.com/photo/2018/03/31/21/57/nature-3279419_960_720.jpg" alt="">
-        </a>
-    </div>
-    <div class="hvrbox-grayscale">
-        <a href="">
-            <img src="https://cdn.pixabay.com/photo/2015/01/01/14/54/horses-585695_960_720.jpg" alt="">
-        </a>
-    </div>
-    <div class="hvrbox-blur">
-        <a href="">
-            <img src="https://cdn.pixabay.com/photo/2020/02/02/15/07/wine-4813260_960_720.jpg" alt="">
-        </a>
-    </div>
-
 </div>
 
 <footer id="grid-footer">
