@@ -1,42 +1,43 @@
-// var - let - const
-
-// var
-var name = 'Milivoje';
+// Primitive data types
+let name = "Milivoje";
 console.log(name);
-name = 'Jovan';
-console.log(name);
+console.log(typeof name);
 
-var job;
-console.log(job);
-job = 'JavaScript Developer';
-console.log(job);
+let age = 35;
+console.log(age);
+console.log(typeof age);
 
-// let
-let newName = 'Jovan';
-console.log(newName);
+let isTrue = true;
+console.log(isTrue);
+console.log(typeof isTrue);
 
-// const
-const car = 'Mercedes';
+let phone = null;
+console.log(phone);
+console.log(typeof phone);
+
+let car;
 console.log(car);
-// have to assig it to a value
-// const phone;
-// console.log(phone); // error message
+console.log(typeof car);
 
-// car = 'Audi';
-// console.log(car); // error (read only)
+let symbol = Symbol();
+console.log(symbol);
+console.log(typeof symbol);
 
-const person = {
-    name: 'Jovan',
-    age: 30
+// Reference types (all come back as object)
+const cars = ['Valkswagen','Audi','BMW'];
+console.log(cars);
+console.log(typeof cars);
+const fruits = new Array('Apple','Pear','Plum');
+console.log(fruits);
+console.log(typeof fruits);
+
+var personalInfo = {
+    city: 'Valjevo',
+    state: 'Serbia'
 };
-console.log(person);
-person.name = 'Jovica';
-console.log(person);
+console.log(personalInfo);
+console.log(typeof personalInfo);
 
-
-
-
-
-
-
-
+const today = new Date();
+console.log(today);
+console.log(typeof today);
