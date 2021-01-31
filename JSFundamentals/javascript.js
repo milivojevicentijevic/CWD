@@ -1,35 +1,38 @@
-// var - let -const
-/// var
-// declare variables
-var name = 'Milivoje';
-console.log(name);   // Milivoje
-name = 'Jovan';
-console.log(name);   // Jovan
-// variables without value
-var job;
-console.log(job);   // undefined
-job = 'JavaScript Developer';
-console.log(job);   // JavascriptDeveloper
-/// let
-let newName = 'Milan';
-console.log(newName);   // Milan
-/// const
-// have to asign it to a value!
-const car = 'Mercedes';
-console.log(car);   // Mercedes
-// this is not good:
-//const phone;
-//console.log(phone);   // Uncaught SyntaxError: Missing initializer in const declaration
-//car = 'Audi';
-//console.log(car);   // Uncaught TypeError: Assignment to constant variable.
-// eventual solution:
-const person = {
-    name: 'Milivoje',
-    age: '35'
-}
-console.log(person);   // {name: "Milivoje", age: "35"}
-person.name = 'Milan';
-console.log(person);   // {name: "Milan", age: "35"}
+/// Primitive data types
+let name = 'Milivoje';
+console.log(name);    // Milivoje
+console.log(typeof name);    // string
+let age = 24;
+console.log(age);    // 24
+console.log(typeof age);    // Number
+let isTrue = true;
+console.log(isTrue);    // true
+console.log(typeof isTrue);    // boolean
+let phone = null;
+console.log(phone);    // null
+console.log(typeof phone);    // object
+let car;
+console.log(car);    // undefined
+console.log(typeof car);    // undefined
+let symbol = Symbol();
+console.log(symbol);    // Symbol()
+console.log(typeof symbol);    // symbol
+/// Reference types (all come back as object)
+const cars = ['Volkswagen','Audi','BMW'];
+console.log(cars);    // (3) ["Volkswagen", "Audi", "BMW"]
+console.log(typeof cars);    // object
+const fruits = new Array('Apple','Pear','Plum');
+console.log(fruits);    // (3) ["Apple", "Pear", "Plum"]
+console.log(typeof fruits);    // object
+var personalInfo = {
+    city: 'Valjevo',
+    country: 'Serbia'
+};
+console.log(personalInfo);    // {city: "Valjevo", country: "Serbia"}
+console.log(typeof fruits);    // object
+const today = new Date();
+console.log(today);
+console.log(typeof today);
 
 
 
