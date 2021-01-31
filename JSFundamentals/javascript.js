@@ -1,36 +1,24 @@
-let x = 20;
-let y = 20;
+let val = 15;
+console.log(val);    // 15
 
-// &&
-if (x > 11 && y < 15) {
-    console.log('True'); 
-} else {
-    console.log('False');   
-}    // False
+// += add and assign operator
+val += 5;
+console.log(val);    // 20
 
-// ||
-if (x > 11 || y < 15) {
-    console.log('True'); 
-} else {
-    console.log('False');   
-}    // True
+// -= sibtract and assign operator
+val -= 5;
+console.log(val);    // 15
 
-x = true;
-y = false;
+// *= multiply and assign operator
+val *= 5;
+console.log(val);    // 75
 
-// !
-if (!x) {
-    console.log('True'); 
-} else {
-    console.log('False');   
-}    // False
+// /= divide and assign operator
+val /= 5;
+console.log(val);    // 15
 
-if (!y) {
-    console.log('True'); 
-} else {
-    console.log('False');   
-}    // True
+// %= modulus and assign operator
+val %= 5;
+console.log(val);    // 0
 
-// Ternary operator
-let z = x ? 'True' : 'False';
-console.log(z);    // True
+
