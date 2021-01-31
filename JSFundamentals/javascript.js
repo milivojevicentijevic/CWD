@@ -1,19 +1,35 @@
-function showMessage() {
-    console.log("This is our first function");
-}
-showMessage();    // This is our first function
-function printOutMyName(firstName) {
-    console.log("My name is " + firstName);
-}
-printOutMyName("Milivoje");    // My name is Milivoje
-function printOutMyNameAndAge(firstName, age = 35) {
-    console.log("My name is " + firstName + " and I'm " + age);
-}
-printOutMyNameAndAge("Milivoje");    // My name is Milivoje and I'm 35
+// window.alert('Hello');
+// window.alert(prompt());
 
-// function with a return value
-function addNumbers(num1, num2) {
-    return num1 + num2;
-}
-let add = addNumbers(10, 10);
-console.log(add);
+// if (confirm("Do you want to quit?")) {
+//     console.log('Ok');
+// } else {
+//     console.log('No');
+// }
+
+let x, y;
+
+x = window.outerWidth;
+y = window.outerHeight;
+console.log(x + " " + y);    // 978 1066
+
+x = window.innerWidth;
+y = window.innerHeight;
+console.log(x + " " + y);    // 962 150
+
+x = window.location;
+console.log(x);    // Location {ancestorOrigins:...}
+x = window.location.hostname;
+console.log(x);    // 127.0.0
+x = window.location.port;
+console.log(x);    // 5500
+x = window.location.href;
+console.log(x);    // http://127.0.0.1:5500/
+//x = window.location.search;  // ?name=milivoje&page=24
+
+// Redirect
+// window.location.href = 'https://apple.com';
+// console.log(x);    // it goes to apple site
+
+x = window.navigator;
+console.log(x);    // Navigator {vendorSub: "", productSub: "20030107", vendor: "Google Inc.", maxTouchPoints: 0, userActivation: UserActivation, …}
