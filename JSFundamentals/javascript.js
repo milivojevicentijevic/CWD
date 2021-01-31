@@ -1,32 +1,26 @@
-const jobs = ['Software dev','HR Analyst','Marketing','Finance'];
-console.log(jobs);    // (4) ["Software dev", "HR Analyst", "Marketing", "Finance"]
-const age = new Array(22, 23, 24, 55, 74, 55, 18);
-console.log(age);    // (7) [22, 23, 24, 55, 74, 55, 18]
+const now = new Date();
+console.log(now);    // Sun Jan 31 2021 17:26:53 GMT+0100...
+console.log(typeof now);    // object
 
-let test;
-test = age.length;
-console.log(test);    // 7
-test = Array.isArray(age);
-console.log(test);    // true
-test = jobs['Marketing'];
-console.log(test);    // undefined
-test = jobs[0];
-console.log(test);    // Software dev
-jobs.push('Data analyst');
-console.log(jobs);    // (5) ["Software dev", "HR Analyst", "Marketing", "Finance", "Data analyst"]
-jobs.pop();
-console.log(jobs);    // (4) ["Software dev", "HR Analyst", "Marketing", "Finance"]
-jobs.shift();
-console.log(jobs);    // (3) ["HR Analyst", "Marketing", "Finance"]
-jobs.unshift('Software dev');
-console.log(jobs);    // 4) ["Software dev", "HR Analyst", "Marketing", "Finance"]
-test = jobs.join(' | ');
-console.log(test);    // Software dev | HR Analyst | Marketing | Finance
-test = jobs.reverse();
-console.log(test);    // (4) ["Finance", "Marketing", "HR Analyst", "Software dev"]
-test = jobs.sort();
-console.log(test);    // (4) ["Finance", "HR Analyst", "Marketing", "Software dev"]
+let val;
+val = now.toString();
+console.log(typeof val);    // string
 
-const mixed = ["word", 23, 16, true, undefined, "TH"];
-test = mixed.sort();
-console.log(test);    // (6) [16, 23, "TH", true, "word", undefined]
+let birthday = new Date(1985, 4, 30, 21, 15, 00);    
+console.log(birthday);    // Thu May 30 1985 21:15:00 GMT+0200 (Central European Summer Time)
+birthday = new Date('May 30 1985 21:15:00');
+console.log(birthday);    // Thu May 30 1985 21:15:00 GMT+0200 (Central European Summer Time)
+birthday = new Date('05/30/1985 21:15:00');
+console.log(birthday);    // Thu May 30 1985 21:15:00 GMT+0200 (Central European Summer Time)
+
+let x;
+x = birthday.getFullYear();
+console.log(x);    // 1985
+x = birthday.getMonth();
+console.log(x);    // 4
+x = birthday.getDay();
+console.log(x);    // 4
+x = birthday.getHours();
+console.log(x);    // 4
+
+ 
